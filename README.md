@@ -5,15 +5,15 @@ The run_analysis.R file is used for getting and cleaning the Human Activity Reco
 ### 1. File download, read data and merge
 The script downloads the dataset.zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzips it into your current working directory
 
-It then reads the data from the following files into their respective data tables :
+It then reads the data from the following files into their respective data tables :</br>
 activity_labels.txt </br>
-features.txt
-subject_train.txt
-y_train.txt
-X_train.txt
-subject_test.txt
-y_test.txt
-X_test.txt
+features.txt</br>
+subject_train.txt</br>
+y_train.txt</br>
+X_train.txt</br>
+subject_test.txt</br>
+y_test.txt</br>
+X_test.txt</br>
 
 The Train and Test data sets are then merged into one data set
 
@@ -24,15 +24,15 @@ The scripts then extract only the measurements on the mean and standard deviatio
 The Activity Ids are then changed using the merge command into descriptive activity names
 
 ###4. Tidying the variable names
-The variables names are then changed to descriptive variable names to tidy the data as follows :
-std() - Stddev
-mean() - Mean
-t - Time
-f - Frequency
-Acc - Accelerometer
-Gyro - Gyroscope
-Mag - Magnitude
-BodyBody - Body
+The variables names are then changed to descriptive variable names to tidy the data as follows :</br>
+std() - Stddev</br>
+mean() - Mean</br>
+t - Time</br>
+f - Frequency</br>
+Acc - Accelerometer</br>
+Gyro - Gyroscope</br>
+Mag - Magnitude</br>
+BodyBody - Body</br>
 Hyphens are also removed from the variable names
 
 
