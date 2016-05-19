@@ -3,15 +3,15 @@
 The tidy data set has following variables
 
 ###Activities 
-The WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING activities performed by the 30 subjects. The variable is of class character</br>
-$ act_name                                     : chr  "LAYING" "LAYING" "LAYING" "LAYING" ...</br>
+The Activities variable contains the WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING activities performed by the 30 subjects. The variable is of class character</br>
+act_name                                    </br>
  
 ### Subjects 
- The 30 subjects who carried out the activities. The variable is of class integer</br>
- $ subject                                      : int  1 2 3 4 5 6 7 8 9 10 ...</br>
+ This variable has the 30 subjects who carried out the activities. The variable is of class integer and has values from 1 to 30</br>
+ subject                                     </br>
  
 ### Measurement variables
- The average of the various measurements that were taken. This includes only the Mean and Standard deviation related variables. 
+ There are 66 measurement variables given below. They represent the averages of the various mean and standard deviations measurements that were measured in the experiment. All the variables are of class numeric. </br>
  The variables names,their types and sample values are given below. 
  </br>
 
