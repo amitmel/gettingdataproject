@@ -64,5 +64,6 @@ names(subset)<-gsub("-", "", names(subset))
 #the average of each variable for each activity and each subject.
 avgset <- subset %>% group_by(act_name,subject) %>% summarise_each(funs(mean))
 
-
+# Create a file of the averaged data set 
+write.table(avgset,"./new_tidy_set.txt")
 
