@@ -3,13 +3,11 @@
 The tidy data set has following variables
 
 ###Activities 
-The Activities variable contains the WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING activities performed by the 30 subjects. The variable is of class character</br>
-act_name                                    </br>
- 
+The <b> act_name </b> variable contains the WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING activities performed by the 30 subjects. The variable is of class character</br>
+            
 ### Subjects 
- This variable has the 30 subjects who carried out the activities. The variable is of class integer and has values from 1 to 30</br>
- subject                                     </br>
- 
+ The <b> subject </b> variable has the 30 subjects who carried out the activities. The variable is of class integer and has values from 1 to 30</br>
+
 ### Measurement variables
  There are 66 measurement variables given below. They represent the averages of the various mean and standard deviations measurements that were measured in the experiment. All the variables are of class numeric. </br>
  The variables names,their types and sample values are given below. 
