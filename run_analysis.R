@@ -1,15 +1,12 @@
-#Clean enviroment and load libraries
-rm(list=ls())
+#Load required libraries
 library(tidyr)
 library(dplyr)
+library(data.table)
 
-#Set Local directory path on Apple OSX
-setwd("/Mac Backup/Business/Data Science/JohnHopCoursera/Assignments/data_science_coursera/Getting Data Project/")
-
-#Download the zip file
+#Download the zip file in the current working directory
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip","Dataset.zip",method="curl")
 
-#Unzip the data to /data 
+#Unzip the file in the current working directory
 unzip("Dataset.zip")
 
 #Read activities names and feature names
@@ -58,12 +55,10 @@ names(subset)<-gsub("BodyBody", "Body", names(subset))
 names(subset)<-gsub("-", "", names(subset))
 
 
-
-
 #5. From the data set in step 4, create a second, independent tidy data set with 
 #the average of each variable for each activity and each subject.
 avgset <- subset %>% group_by(act_name,subject) %>% summarise_each(funs(mean))
 
 # Create a file of the averaged data set 
-write.table(avgset,"./new_tidy_set.txt")
+write.table(avgset,"./new_tidy_set.txt",row.name=FALSE)
 
