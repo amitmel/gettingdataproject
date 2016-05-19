@@ -5,7 +5,7 @@ The run_analysis.R file is used for getting and cleaning the Human Activity Reco
 ### 1. File download, read data and merge
 The script downloads the dataset.zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzips it into your current working directory
 
-It then reads the data from the following files into their respective data tables
+It then reads the data from the following files into their respective data tables :
 activity_labels.txt
 features.txt
 subject_train.txt
